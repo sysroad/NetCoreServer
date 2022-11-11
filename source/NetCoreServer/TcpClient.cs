@@ -1002,12 +1002,12 @@ namespace NetCoreServer
         private void SendError(SocketError error)
         {
             // Skip disconnect errors
-            if ((error == SocketError.ConnectionAborted) ||
-                (error == SocketError.ConnectionRefused) ||
-                (error == SocketError.ConnectionReset) ||
-                (error == SocketError.OperationAborted) ||
-                (error == SocketError.Shutdown))
-                return;
+            //if ((error == SocketError.ConnectionAborted) ||
+            //    (error == SocketError.ConnectionRefused) ||
+            //    (error == SocketError.ConnectionReset) ||
+            //    (error == SocketError.OperationAborted) ||
+            //    (error == SocketError.Shutdown))
+            //    return;
 
             OnError(error);
         }
